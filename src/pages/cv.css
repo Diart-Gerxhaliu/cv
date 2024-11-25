@@ -50,8 +50,9 @@
     align-items: center;
     justify-content: center;
     width: 750px;
-    gap: 25px;
     margin: auto;
+    gap: 25px;
+   
 
 }
 .languages .flex img{
