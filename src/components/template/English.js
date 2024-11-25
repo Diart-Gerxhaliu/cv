@@ -75,6 +75,7 @@ function English() {
       <Languages 
         language={language}
       />
+      
     </div>
   )
 }
