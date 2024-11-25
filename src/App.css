@@ -1,5 +1,10 @@
+body{
+  background-color: black;
+}
 .App {
   text-align: center;
+  color: white;
+  
 }
 
 .App-logo {
@@ -35,4 +40,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;  
+  background-image: linear-gradient(to bottom, black, 70%, rgba(0, 0, 0, 0));
+}
+
+.navbar{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 45%;
+}
+.navbar li{
+  list-style: none;
+  padding:5px 10px;
+  border-radius: 10px;
+  
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+}
+.navbar a:hover{
+  text-decoration: none;
+  background-color: darkblue;
+}
+img{
+  width: 100%;
 }
