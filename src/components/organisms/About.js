@@ -2,6 +2,13 @@ import React from 'react'
 import Heading from '../atom/Heading'
 import Text from '../atom/Text'
 import Image from '../atom/Image'
+import styled, { keyframes } from 'styled-components';
+import { merge, fadeIn, bounce } from 'react-animations';
+const tadaFlip = merge(bounce, fadeIn);
+let tf = keyframes `${tadaFlip}`
+const BouncyDiv = styled.div`
+  animation: 1s ${tf};
+`;
 
 function About({
     text,
@@ -10,7 +17,8 @@ function About({
     image_alt
 }) {
   return (
-    <div className='about'>
+    <div className='about' id='About'>
+      <BouncyDiv>
       <div className='left'>
         <Heading text={'About'}/>
         <Text text={text}/>
@@ -19,6 +27,7 @@ function About({
       <div className='right'>
         <Image image_src={image_src} image_alt={image_alt}/>
       </div>
+      </BouncyDiv>
 
     </div>
   )
