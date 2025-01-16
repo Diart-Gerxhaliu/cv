@@ -18,7 +18,7 @@ function Intro({
         <Link to={icon.link}><Icon 
             icon_src={icon.src} 
             icon_alt={icon.lt}
-            target="_blank"
+            
         /></Link>
       )}
       </div>

@@ -6,15 +6,15 @@ import Navbar from '../molecules/Navbar'
 function Menu() {
   const list =[{
     text: 'Home',
-    link: '#Home'
+    link: 'Home'
 },
 {
     text: 'About',
-    link: '#About'
+    link: 'About'
 },
 {
     text: 'Contact',
-    link: '#Contact'
+    link: 'Contact'
 }]
   return (
     <div className='menu'>

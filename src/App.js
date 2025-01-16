@@ -13,9 +13,11 @@ function App() {
         <Menu/>
         <Routes>
           
-          <Route path='/#Home' element={<Home/>}/>
-          <Route path='/#About' element={<About/>}/>
+          <Route path='/#Home' element={<Home/>} />
+          <Route path='/#About' element={<About/>} />
           <Route path='/'  element={<CvEng/>}/>
+          
+          
         </Routes>
       </BrowserRouter>
     </div>
