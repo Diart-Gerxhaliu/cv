@@ -2,8 +2,8 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Menu from './components/organisms/Menu';
 import CvEng from './pages/CvEng';
-import Home from './components/organisms/Home';
-import About from './components/organisms/About';
+import About from './components/template/About';
+import Contact from './components/template/Contact';
 
 
 function App() {
@@ -13,10 +13,10 @@ function App() {
         <Menu/>
         <Routes>
           
-          <Route path='/#Home' element={<Home/>} />
-          <Route path='/#About' element={<About/>} />
-          <Route path='/'  element={<CvEng/>}/>
           
+          <Route path='/'  element={<CvEng/>}/>
+          <Route path='/About' element={<About/>}/>
+          <Route path='/Contact' element={<Contact/>}/>
           
         </Routes>
       </BrowserRouter>

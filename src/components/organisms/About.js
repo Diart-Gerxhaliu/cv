@@ -17,7 +17,7 @@ function About({
     image_alt
 }) {
   return (
-    <div className='about' id='About'>
+    <div className='aboutorg' id='About'>
       <BouncyDiv>
       <div className='left'>
         <Heading text={'About'}/>
