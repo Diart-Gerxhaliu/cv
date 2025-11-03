@@ -17,6 +17,8 @@ import { fadeIn } from 'react-animations';
 import Work from '../organisms/Work'
 import Cap1 from '../../assets/img/Capture.PNG'
 import Cap2 from '../../assets/img/Capture2.PNG'
+import CMS from '../../assets/img/Cms.PNG'
+import TMS from '../../assets/img/Task-Managment.PNG'
  
 const bounceAnimation = keyframes`${fadeIn}`;
  
@@ -49,7 +51,7 @@ function English() {
     {
         src: Css,
         alt: 'css',
-        perc: '80%',
+        perc: '70%',
     },{
         src: JS,
         alt: 'javascript',
@@ -57,19 +59,19 @@ function English() {
     },{
         src: Git,
         alt: 'git',
-        perc: '60%',
+        perc: '80%',
     },{
         src: Github,
         alt: 'github',
-        perc: '50%',
+        perc: '70%',
     },{
       src: Act,
       alt: 'React',
-      perc: 'Learning',
+      perc: '60%',
     },{
       src: Wordpress,
       alt: 'Wordpress',
-      perc: '60%',
+      perc: '50%',
     }]
 
     let exp = [{
@@ -87,7 +89,24 @@ function English() {
       text:"This was a project I did to get better at react and use the atomic code structure",
       link: "https://test-react-silk-six.vercel.app/",
       linkText: "View here",
-    }]
+    },
+    {
+      src:CMS,
+      alt:"Content Managment Website",
+      heading:"Content Managment Website",
+      text:"This project was made to make a functional dashboard the idea was taken from Wordpress's dashboard where you can manipulate data without going into the code file and editing the code, I made it on localStorage so the changes someone makes wouldn't be transfered throughout all the people that would make changes to affect everyone who'd use it if you wanna edit it add a /admin/dashboard to it, it had a password but i took the password out",
+      link:"https://actual-cms-ia.vercel.app/",
+      linkText: "View here"
+    },
+    {
+      src:TMS,
+      alt:"Task Managment Website",
+      heading:"Task Managment Website",
+      text:"This project was made to replicate Trello to some degree the main aspects I implimented are a functional login/sign up with a database the addition and saving of tasks the addition of columns ",
+      link:"https://task-managment-website.vercel.app/",
+      linkText:"View here"
+    }
+  ]
 
 
 
